@@ -223,12 +223,13 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
             
             for route in unwrappedResponse.routes {
                 self.mapRouteView.add(route.polyline)
-                self.mapRouteView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                //self.mapRouteView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                self.mapRouteView.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsetsMake(120.0, 120.0, 120.0, 120.0), animated: true)
             }
         }
         mapRouteView.showAnnotations([mapRouteView.annotations[0]], animated: true)
     }
-    
+
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
         renderer.strokeColor = UIColor.purple
