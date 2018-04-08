@@ -50,19 +50,21 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
             favoriteButton.setTitle("★", for: .normal)
         }
         NotificationCenter.default.post(name: .visitedStatusChange, object: nil)
+        MuralManager.sharedInstance.saveUserData()
     }
     
     @IBAction func visitedButtonPressed(_ sender: Any) {
         if checkDistance() {
             visitedButton.setTitle(" ", for: .normal)
             visitedLoadingIndicator.startAnimating()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                 self.visitedLoadingIndicator.stopAnimating()
                 self.mural.visited = true
                 self.visitedButton.setTitle("Visited", for: .normal)
                 self.visitedButton.backgroundColor = UIColor.cyan
                 self.visitedButton.isUserInteractionEnabled = false
                 NotificationCenter.default.post(name: .visitedStatusChange, object: nil)
+                MuralManager.sharedInstance.saveUserData()
             })
         } else {
             visitedButton.setTitle(" ", for: .normal)
