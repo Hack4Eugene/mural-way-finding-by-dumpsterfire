@@ -62,6 +62,7 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
                 self.visitedButton.setTitle("Visited", for: .normal)
                 self.visitedButton.backgroundColor = UIColor.cyan
                 self.visitedButton.isUserInteractionEnabled = false
+                NotificationCenter.default.post(name: .visitedStatusChange, object: nil)
             })
         } else {
             visitedButton.setTitle(" ", for: .normal)
@@ -77,7 +78,6 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
                 self.visitedButton.isUserInteractionEnabled = true
             })
         }
-        NotificationCenter.default.post(name: .visitedStatusChange, object: nil)
     }
     
     @IBAction func routeButtonPressed(_ sender: Any) {
@@ -202,7 +202,7 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
     func checkDistance() -> Bool {
         let muralLocation: CLLocation = CLLocation.init(latitude: mural.latitude, longitude: mural.longitude)
         let currentDistance = muralLocation.distance(from: locationManager.location!)
-        return currentDistance <= 50.0
+        return true//currentDistance <= 50.0
     }
     
     //MARK: - Draw Route
