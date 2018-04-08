@@ -18,11 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="EdP-wM-Lji">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="EdP-wM-Lji">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="EdP-wM-Lji" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="U35-0i-vsu"/>
+                            <constraint firstItem="EdP-wM-Lji" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ilN-fb-HdN"/>
+                            <constraint firstItem="EdP-wM-Lji" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q8g-d0-Wbo"/>
+                            <constraint firstItem="EdP-wM-Lji" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wPn-eZ-BUP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
