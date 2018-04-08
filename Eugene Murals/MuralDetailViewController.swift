@@ -84,6 +84,7 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
         arScene.pause()
         if getRouteButton.titleLabel?.text == "Show Route" {
             mapRouteView.isHidden = false
+            imageView.isHidden = true
             if ARConfiguration.isSupported {
                 getRouteButton.setTitle("Show AR View", for: .normal)
             } else {
@@ -94,11 +95,13 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
         if getRouteButton.titleLabel?.text == "Show Image" {
             mapRouteView.isHidden = true
             arScene.isHidden = true
+            imageView.isHidden = false
             getRouteButton.setTitle("Show Route", for: .normal)
         }
         
         if getRouteButton.titleLabel?.text == "Show AR View" {
             mapRouteView.isHidden = true
+            imageView.isHidden = true
             arScene.isHidden = false
             arScene.run()
             getRouteButton.setTitle("Show Image", for: .normal)
