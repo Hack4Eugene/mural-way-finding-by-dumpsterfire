@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49214A3820644E3900088670 /* MuralAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49214A3720644E3900088670 /* MuralAnnotationView.swift */; };
+		49214A3A206759DE00088670 /* MuralAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49214A39206759DE00088670 /* MuralAnnotation.swift */; };
+		49214A3E2067964D00088670 /* ClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49214A3D2067964C00088670 /* ClusterView.swift */; };
+		49214A4020684BF300088670 /* MuralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49214A3F20684BF300088670 /* MuralTableViewController.swift */; };
+		49214A4220685A1000088670 /* MuralDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49214A4120685A1000088670 /* MuralDetailViewController.swift */; };
+		49224B992068ECA600678D32 /* MuralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49224B982068ECA600678D32 /* MuralTableViewCell.swift */; };
+		493DF8692055BBCD007AEA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DF8682055BBCD007AEA2F /* AppDelegate.swift */; };
+		493DF86B2055BBCD007AEA2F /* MuralMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DF86A2055BBCD007AEA2F /* MuralMapViewController.swift */; };
+		493DF8702055BBCD007AEA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493DF86E2055BBCD007AEA2F /* Main.storyboard */; };
+		493DF8722055BBCD007AEA2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493DF8712055BBCD007AEA2F /* Assets.xcassets */; };
+		493DF8752055BBCD007AEA2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493DF8732055BBCD007AEA2F /* LaunchScreen.storyboard */; };
+		493FB227207A04A300D3BA86 /* ARNavigation LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 493FB226207A04A200D3BA86 /* ARNavigation LICENSE */; };
+		493FB22B207A07DC00D3BA86 /* ARKit-CoreLocation LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 493FB22A207A07DC00D3BA86 /* ARKit-CoreLocation LICENSE */; };
+		49626A2C205A4D4A0058A1B4 /* MuralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49626A2B205A4D4A0058A1B4 /* MuralManager.swift */; };
+		497F20E3207321430024486E /* Mural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F20E2207321430024486E /* Mural.swift */; };
+		498B22E72074B98400815376 /* Ionic Font License in Resources */ = {isa = PBXBuildFile; fileRef = 498B22E62074B98400815376 /* Ionic Font License */; };
+		49BE8A9320796C3B000EE763 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE8A9220796C3B000EE763 /* AchievementsViewController.swift */; };
+		49BE8A9520796E6E000EE763 /* EFCountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE8A9420796E6E000EE763 /* EFCountingLabel.swift */; };
+		717EDF2420799C6C006CC0E4 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF2320799C6C006CC0E4 /* LocationNode.swift */; };
+		717EDF2E2079A0B1006CC0E4 /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF252079A0B0006CC0E4 /* SceneLocationView.swift */; };
+		717EDF2F2079A0B1006CC0E4 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF262079A0B0006CC0E4 /* CGPoint+Extensions.swift */; };
+		717EDF302079A0B1006CC0E4 /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF272079A0B0006CC0E4 /* SceneLocationEstimate+Extensions.swift */; };
+		717EDF312079A0B1006CC0E4 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF282079A0B0006CC0E4 /* CLLocation+Extensions.swift */; };
+		717EDF322079A0B1006CC0E4 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF292079A0B1006CC0E4 /* FloatingPoint+Radians.swift */; };
+		717EDF332079A0B1006CC0E4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF2A2079A0B1006CC0E4 /* LocationManager.swift */; };
+		717EDF342079A0B1006CC0E4 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF2B2079A0B1006CC0E4 /* SceneLocationEstimate.swift */; };
+		717EDF352079A0B1006CC0E4 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF2C2079A0B1006CC0E4 /* SCNNode+Extensions.swift */; };
+		717EDF362079A0B1006CC0E4 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF2D2079A0B1006CC0E4 /* SCNVector3+Extensions.swift */; };
+		717EDF392079B293006CC0E4 /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF372079B293006CC0E4 /* MatrixHelper.swift */; };
+		717EDF3C2079B44A006CC0E4 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF3B2079B44A006CC0E4 /* CLLocationCoordinate2D+Extension.swift */; };
+		717EDF3E2079B51B006CC0E4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF3D2079B51B006CC0E4 /* Double+Extension.swift */; };
+		717EDF402079B552006CC0E4 /* LocationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EDF3F2079B552006CC0E4 /* LocationConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49214A3720644E3900088670 /* MuralAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralAnnotationView.swift; sourceTree = "<group>"; };
+		49214A39206759DE00088670 /* MuralAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralAnnotation.swift; sourceTree = "<group>"; };
+		49214A3D2067964C00088670 /* ClusterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterView.swift; sourceTree = "<group>"; };
+		49214A3F20684BF300088670 /* MuralTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralTableViewController.swift; sourceTree = "<group>"; };
+		49214A4120685A1000088670 /* MuralDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralDetailViewController.swift; sourceTree = "<group>"; };
+		49224B982068ECA600678D32 /* MuralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralTableViewCell.swift; sourceTree = "<group>"; };
+		493DF8652055BBCD007AEA2F /* Eugene Murals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eugene Murals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		493DF8682055BBCD007AEA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		493DF86A2055BBCD007AEA2F /* MuralMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralMapViewController.swift; sourceTree = "<group>"; };
+		493DF86F2055BBCD007AEA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		493DF8712055BBCD007AEA2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		493DF8742055BBCD007AEA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		493DF8762055BBCD007AEA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493FB226207A04A200D3BA86 /* ARNavigation LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ARNavigation LICENSE"; sourceTree = "<group>"; };
+		493FB22A207A07DC00D3BA86 /* ARKit-CoreLocation LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ARKit-CoreLocation LICENSE"; sourceTree = "<group>"; };
+		49626A2B205A4D4A0058A1B4 /* MuralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralManager.swift; sourceTree = "<group>"; };
+		497F20E2207321430024486E /* Mural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mural.swift; sourceTree = "<group>"; };
+		498B22E62074B98400815376 /* Ionic Font License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ionic Font License"; sourceTree = "<group>"; };
+		49BE8A9220796C3B000EE763 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		49BE8A9420796E6E000EE763 /* EFCountingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFCountingLabel.swift; sourceTree = "<group>"; };
+		717EDF2320799C6C006CC0E4 /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		717EDF252079A0B0006CC0E4 /* SceneLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		717EDF262079A0B0006CC0E4 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		717EDF272079A0B0006CC0E4 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		717EDF282079A0B0006CC0E4 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		717EDF292079A0B1006CC0E4 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		717EDF2A2079A0B1006CC0E4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		717EDF2B2079A0B1006CC0E4 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		717EDF2C2079A0B1006CC0E4 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		717EDF2D2079A0B1006CC0E4 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		717EDF372079B293006CC0E4 /* MatrixHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+		717EDF3B2079B44A006CC0E4 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		717EDF3D2079B51B006CC0E4 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		717EDF3F2079B552006CC0E4 /* LocationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		493DF8622055BBCD007AEA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493DF85C2055BBCD007AEA2F = {
+			isa = PBXGroup;
+			children = (
+				493DF8672055BBCD007AEA2F /* Eugene Murals */,
+				493DF8662055BBCD007AEA2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		493DF8662055BBCD007AEA2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				493DF8652055BBCD007AEA2F /* Eugene Murals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493DF8672055BBCD007AEA2F /* Eugene Murals */ = {
+			isa = PBXGroup;
+			children = (
+				493FB228207A04AB00D3BA86 /* ARNavigation */,
+				493FB229207A07A700D3BA86 /* ARKit-CoreLocation */,
+				49BE8A9420796E6E000EE763 /* EFCountingLabel.swift */,
+				49214A3D2067964C00088670 /* ClusterView.swift */,
+				498B22E62074B98400815376 /* Ionic Font License */,
+				493DF8682055BBCD007AEA2F /* AppDelegate.swift */,
+				49626A2B205A4D4A0058A1B4 /* MuralManager.swift */,
+				497F20E2207321430024486E /* Mural.swift */,
+				49214A39206759DE00088670 /* MuralAnnotation.swift */,
+				49214A3720644E3900088670 /* MuralAnnotationView.swift */,
+				493DF86A2055BBCD007AEA2F /* MuralMapViewController.swift */,
+				49214A3F20684BF300088670 /* MuralTableViewController.swift */,
+				49224B982068ECA600678D32 /* MuralTableViewCell.swift */,
+				49214A4120685A1000088670 /* MuralDetailViewController.swift */,
+				49BE8A9220796C3B000EE763 /* AchievementsViewController.swift */,
+				493DF86E2055BBCD007AEA2F /* Main.storyboard */,
+				493DF8712055BBCD007AEA2F /* Assets.xcassets */,
+				493DF8732055BBCD007AEA2F /* LaunchScreen.storyboard */,
+				493DF8762055BBCD007AEA2F /* Info.plist */,
+			);
+			path = "Eugene Murals";
+			sourceTree = "<group>";
+		};
+		493FB228207A04AB00D3BA86 /* ARNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				717EDF3D2079B51B006CC0E4 /* Double+Extension.swift */,
+				717EDF3B2079B44A006CC0E4 /* CLLocationCoordinate2D+Extension.swift */,
+				717EDF372079B293006CC0E4 /* MatrixHelper.swift */,
+				717EDF3F2079B552006CC0E4 /* LocationConstants.swift */,
+				493FB226207A04A200D3BA86 /* ARNavigation LICENSE */,
+			);
+			path = ARNavigation;
+			sourceTree = "<group>";
+		};
+		493FB229207A07A700D3BA86 /* ARKit-CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				493FB22A207A07DC00D3BA86 /* ARKit-CoreLocation LICENSE */,
+				717EDF262079A0B0006CC0E4 /* CGPoint+Extensions.swift */,
+				717EDF282079A0B0006CC0E4 /* CLLocation+Extensions.swift */,
+				717EDF292079A0B1006CC0E4 /* FloatingPoint+Radians.swift */,
+				717EDF2A2079A0B1006CC0E4 /* LocationManager.swift */,
+				717EDF2B2079A0B1006CC0E4 /* SceneLocationEstimate.swift */,
+				717EDF272079A0B0006CC0E4 /* SceneLocationEstimate+Extensions.swift */,
+				717EDF252079A0B0006CC0E4 /* SceneLocationView.swift */,
+				717EDF2C2079A0B1006CC0E4 /* SCNNode+Extensions.swift */,
+				717EDF2D2079A0B1006CC0E4 /* SCNVector3+Extensions.swift */,
+				717EDF2320799C6C006CC0E4 /* LocationNode.swift */,
+			);
+			path = "ARKit-CoreLocation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493DF8642055BBCD007AEA2F /* Eugene Murals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493DF8792055BBCD007AEA2F /* Build configuration list for PBXNativeTarget "Eugene Murals" */;
+			buildPhases = (
+				493DF8612055BBCD007AEA2F /* Sources */,
+				493DF8622055BBCD007AEA2F /* Frameworks */,
+				493DF8632055BBCD007AEA2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eugene Murals";
+			productName = "Eugene Murals";
+			productReference = 493DF8652055BBCD007AEA2F /* Eugene Murals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		493DF85D2055BBCD007AEA2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Andrew Nordahl";
+				TargetAttributes = {
+					493DF8642055BBCD007AEA2F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 493DF8602055BBCD007AEA2F /* Build configuration list for PBXProject "Eugene Murals" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 493DF85C2055BBCD007AEA2F;
+			productRefGroup = 493DF8662055BBCD007AEA2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493DF8642055BBCD007AEA2F /* Eugene Murals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493DF8632055BBCD007AEA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493FB22B207A07DC00D3BA86 /* ARKit-CoreLocation LICENSE in Resources */,
+				493DF8752055BBCD007AEA2F /* LaunchScreen.storyboard in Resources */,
+				493DF8722055BBCD007AEA2F /* Assets.xcassets in Resources */,
+				493DF8702055BBCD007AEA2F /* Main.storyboard in Resources */,
+				498B22E72074B98400815376 /* Ionic Font License in Resources */,
+				493FB227207A04A300D3BA86 /* ARNavigation LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		493DF8612055BBCD007AEA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717EDF312079A0B1006CC0E4 /* CLLocation+Extensions.swift in Sources */,
+				717EDF3C2079B44A006CC0E4 /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				49214A3E2067964D00088670 /* ClusterView.swift in Sources */,
+				717EDF3E2079B51B006CC0E4 /* Double+Extension.swift in Sources */,
+				717EDF2F2079A0B1006CC0E4 /* CGPoint+Extensions.swift in Sources */,
+				493DF8692055BBCD007AEA2F /* AppDelegate.swift in Sources */,
+				49214A4220685A1000088670 /* MuralDetailViewController.swift in Sources */,
+				717EDF302079A0B1006CC0E4 /* SceneLocationEstimate+Extensions.swift in Sources */,
+				497F20E3207321430024486E /* Mural.swift in Sources */,
+				717EDF2E2079A0B1006CC0E4 /* SceneLocationView.swift in Sources */,
+				49214A4020684BF300088670 /* MuralTableViewController.swift in Sources */,
+				49626A2C205A4D4A0058A1B4 /* MuralManager.swift in Sources */,
+				493DF86B2055BBCD007AEA2F /* MuralMapViewController.swift in Sources */,
+				717EDF332079A0B1006CC0E4 /* LocationManager.swift in Sources */,
+				717EDF322079A0B1006CC0E4 /* FloatingPoint+Radians.swift in Sources */,
+				717EDF352079A0B1006CC0E4 /* SCNNode+Extensions.swift in Sources */,
+				49224B992068ECA600678D32 /* MuralTableViewCell.swift in Sources */,
+				49214A3820644E3900088670 /* MuralAnnotationView.swift in Sources */,
+				717EDF2420799C6C006CC0E4 /* LocationNode.swift in Sources */,
+				717EDF392079B293006CC0E4 /* MatrixHelper.swift in Sources */,
+				717EDF402079B552006CC0E4 /* LocationConstants.swift in Sources */,
+				49BE8A9320796C3B000EE763 /* AchievementsViewController.swift in Sources */,
+				717EDF342079A0B1006CC0E4 /* SceneLocationEstimate.swift in Sources */,
+				717EDF362079A0B1006CC0E4 /* SCNVector3+Extensions.swift in Sources */,
+				49BE8A9520796E6E000EE763 /* EFCountingLabel.swift in Sources */,
+				49214A3A206759DE00088670 /* MuralAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		493DF86E2055BBCD007AEA2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493DF86F2055BBCD007AEA2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		493DF8732055BBCD007AEA2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493DF8742055BBCD007AEA2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		493DF8772055BBCD007AEA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		493DF8782055BBCD007AEA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		493DF87A2055BBCD007AEA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E7374PA8T;
+				INFOPLIST_FILE = "Eugene Murals/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AndrewNordahl.Eugene-Murals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		493DF87B2055BBCD007AEA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E7374PA8T;
+				INFOPLIST_FILE = "Eugene Murals/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AndrewNordahl.Eugene-Murals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		493DF8602055BBCD007AEA2F /* Build configuration list for PBXProject "Eugene Murals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DF8772055BBCD007AEA2F /* Debug */,
+				493DF8782055BBCD007AEA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493DF8792055BBCD007AEA2F /* Build configuration list for PBXNativeTarget "Eugene Murals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DF87A2055BBCD007AEA2F /* Debug */,
+				493DF87B2055BBCD007AEA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 493DF85D2055BBCD007AEA2F /* Project object */;
+}
