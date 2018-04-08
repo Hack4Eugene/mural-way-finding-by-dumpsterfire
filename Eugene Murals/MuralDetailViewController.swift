@@ -202,7 +202,7 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
     func checkDistance() -> Bool {
         let muralLocation: CLLocation = CLLocation.init(latitude: mural.latitude, longitude: mural.longitude)
         let currentDistance = muralLocation.distance(from: locationManager.location!)
-        return true//currentDistance <= 50.0
+        return currentDistance <= 50.0
     }
     
     //MARK: - Draw Route
