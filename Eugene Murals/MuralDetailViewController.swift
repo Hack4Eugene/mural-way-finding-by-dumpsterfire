@@ -81,6 +81,7 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
     }
     
     @IBAction func routeButtonPressed(_ sender: Any) {
+        arScene.pause()
         if getRouteButton.titleLabel?.text == "Show Route" {
             mapRouteView.isHidden = false
             if ARConfiguration.isSupported {
@@ -99,6 +100,7 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
         if getRouteButton.titleLabel?.text == "Show AR View" {
             mapRouteView.isHidden = true
             arScene.isHidden = false
+            arScene.run()
             getRouteButton.setTitle("Show Image", for: .normal)
         }
     }
@@ -147,7 +149,6 @@ class MuralDetailViewController: UIViewController, MKMapViewDelegate, ARSessionD
         let pinImage = mural.image
         let pinLocationNode = LocationAnnotationNode(location: muralLocation, image: pinImage)
         arScene.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode)
-        arScene.run()
     }
     
     func populateView() {

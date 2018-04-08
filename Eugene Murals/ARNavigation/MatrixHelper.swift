@@ -42,7 +42,10 @@ public class MatrixHelper {
     }
     
    public static func transformMatrix(for matrix: simd_float4x4, originLocation: CLLocation, location: CLLocation) -> simd_float4x4 {
-        let distance = Float(location.distance(from: originLocation))
+        var distance = Float(location.distance(from: originLocation))
+        if distance > 1000 {
+            distance = 500
+        }
         let bearing = originLocation.bearingToLocationRadian(location)
         let position = vector_float4(0.0, 0.0, -distance, 0.0)
         let translationMatrix = MatrixHelper.translationMatrix(with: matrix_identity_float4x4, for: position)
