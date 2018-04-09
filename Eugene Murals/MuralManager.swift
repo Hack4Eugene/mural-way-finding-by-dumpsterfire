@@ -14,6 +14,9 @@ class MuralManager {
     private init() {}
     
     private let muralJsonUrl = URL(string:"https://s3-us-west-2.amazonaws.com/eugene-murals/murals.json")
+    private var documentsUrl: URL {
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    }
     
     var murals: [Mural] = []
     var dataReadyForUse: Bool = false
@@ -107,6 +110,12 @@ class MuralManager {
         let dispatchGroup = DispatchGroup()
         
         for mural in murals {
+            //get cached copy if exists
+            if localImageExistsWith(uid: mural.uid) {
+                mural.image = getSavedImageFor(uid: mural.uid)
+                continue
+            }
+            
             //set placeholder image if url is empty
             if mural.imageUrl == " " {
                 if let placeholderImage = UIImage(named: "comingSoon") {
@@ -129,6 +138,7 @@ class MuralManager {
                         return
                     }
                     mural.image = downloadedImage
+                    self.saveMural(image: mural.image, with: mural.uid)
                 }
                 dispatchGroup.leave()
             }).resume()
@@ -137,6 +147,42 @@ class MuralManager {
             self.dataReadyForUse = true
             NotificationCenter.default.post(name: .muralDataReady, object: nil)
             //print("image download complete")
+        }
+        //cleanup any saved images for murals that no longer exist
+        purgeUnusedSavedImages()
+    }
+    
+    private func localImageExistsWith(uid: String) -> Bool {
+        let imagePath = documentsUrl.appendingPathComponent(uid).path
+        return FileManager.default.fileExists(atPath:imagePath)
+    }
+    
+    private func saveMural(image: UIImage, with muralUid: String) {
+        if let imageData = UIImageJPEGRepresentation(image, 1.0) {
+            let fileName = documentsUrl.appendingPathComponent(muralUid)
+            try? imageData.write(to: fileName)
+        }
+    }
+    
+    private func getSavedImageFor(uid: String) -> UIImage {
+        do {
+            let imageData = try Data(contentsOf: documentsUrl.appendingPathComponent(uid))
+            return UIImage(data: imageData) ?? UIImage()
+        } catch {
+        
+        }
+        return UIImage()
+    }
+    
+    private func purgeUnusedSavedImages() {
+        for mural in murals {
+            if !localImageExistsWith(uid: mural.uid) {
+                do {
+                    try FileManager.default.removeItem(at: documentsUrl.appendingPathComponent(mural.uid))
+                } catch {
+                    print("Error deleting saved image")
+                }
+            }
         }
     }
 }
